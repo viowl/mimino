@@ -1,19 +1,117 @@
-.container {
-  width: 414px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
+  color: currentColor;
   text-decoration: none;
 }
 
-.header {
-    display: flex;
+button {
+  cursor: pointer;
 }
 
-.header-adres {
-  display: inline-block;
-  width: 210px;
-  height: 47px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+/* =====================Header css mobil============= */
+
+.header-soc-list {
+  display: none;
+}
+
+.header {
+  background-color: gray;
+  height: 111px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+}
+
+.logo {
+  display: inline-block;
+   width: 114px;
+  
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+}
+
+.header-list {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+/* =========================Footer css mobil */
+
+.footer-name-icon {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  height: 240px;
+  background-color: #0e0c07;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.footer-logo {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #f3c653;
+  padding-top: 98px;
+  
+}
+
+.footer-nav-list {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  padding-top: 40px;
+}
+
+.footer-nav-item:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.footer-svg {
+    fill: #F3C653;
+    opacity: 0.7;
+}
+
